@@ -1,0 +1,3 @@
+[submodule "themes/mini"]
+	path = themes/mini
+	url = git@github.com:explorer953/hugo-theme-mini.git
