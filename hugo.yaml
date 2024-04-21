@@ -1,0 +1,60 @@
+baseURL: https://explorer953.github.io
+languageCode: en-us
+title: explorer953
+theme: mini
+
+defaultContentLanguage: en
+
+permalinks:
+  posts: /posts/:title/
+
+paginate: 50
+
+# Hugo Configure Markup
+# More info: https://gohugo.io/getting-started/configuration-markup#
+markup:
+  highlight:
+    # guessSyntax: true 
+    # style: emacs
+    codeFences: true
+    guessSyntax: true
+    style: friendly
+  tableOfContents:
+    endLevel: 2
+    ordered: false
+    startLevel: 2
+
+params:
+  author: explorer953
+  bio: following rabbit holes through the tech stack
+  # Site Description, used in HTML meat
+  description: Personal blog about Cybersecurity
+
+  enableRSS: false
+  enableComments: false
+  enableGoogleAnalytics: false
+  showToc: true
+  showPowerBy: false
+  math: false
+  hiddenPostSummaryInHomePage: false
+  tags: false
+
+social:
+  linkedin: https://www.linkedin.com/in/arnauortega/
+  github: https://github.com/explorer953
+
+# Extra links in navigation
+links:
+  ## e.g.
+  # - name: Project
+  #   path: /project
+
+# You can put your custom css and js to `static` directory, or use remote css and js files which start with `http://` or `https://`
+customCSS:
+  ## e.g.
+  # - css/custom.css # local css in `static/css/custom.css`
+  # - https://example.com/custom.css # remote css
+customJS:
+  ## e.g.
+  # - js/custom.js # local js in `static/js/custom.js`
+  # - https://example.com/custom.js # remote js
