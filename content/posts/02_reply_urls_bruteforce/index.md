@@ -383,6 +383,12 @@ REPORTING: Reporting SP - reply - scopes
 
 In this example, we see how the `app-demo` has the reply URL `https://idontexist23843.azurewebsites.net` set as a SPA. We also see how the application has defined several OAuth permissions, but most of them require a consent by the user or an admin. However, the scope `https://graph.windows.net/Directory.AccessAsUser.All` has been granted and the application returned tokens for that. Therefore, if we register the `idontexist23843` as a new Azure website, we could impersonate the user in the tenant, just by luring him to follow a link.
 
+## Microsoft’s response
+Like in the previous blog post we found another replyURL (with the tool described in this blog), which was not registered and was pre-authorized by the Azure Active Directory graph. So again, we decided to responsibly disclose this issue to Microsoft.
+- 13 Jul 2024: Report sent to MSRC.
+- 17 Jul 2024: MSRC opens a case to track this issue.
+- 22 Aug 2024: MSRC confirms they can reproduce the behavior and (this time) assigns a bounty. 🎉
+
 ## Takeaway
 - With the tool presented here, we can finally explore and enumerate the attack surface that multitenant applications have in a tenant. The best of it: it's fully automated.
 - For red teamers, this offers a new way to attack a tenant, once you get access to user credentials.
