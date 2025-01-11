@@ -8,7 +8,7 @@ defaultContentLanguage: en
 permalinks:
   posts: /posts/:title/
 
-paginate: 50
+pagination.pagerSize: 50
 
 # Hugo Configure Markup
 # More info: https://gohugo.io/getting-started/configuration-markup#
@@ -38,10 +38,10 @@ params:
   math: false
   hiddenPostSummaryInHomePage: false
   tags: false
-
-social:
-  linkedin: https://www.linkedin.com/in/arnauortega/
-  github: https://github.com/explorer953
+  
+  social:
+    linkedin: https://www.linkedin.com/in/arnauortega/
+    github: https://github.com/explorer953
 
 # Extra links in navigation
 links:
